@@ -12,7 +12,7 @@
 
 # print = (a + b + c) # остаётся сложить a b c
 
-print("Введите число")
+print("Введите трёхзначное число ")
 n = int(input()) 
 c = n % 10 
 n = n // 10 
@@ -20,3 +20,11 @@ b = n % 10
 a = n // 10 
 
 print(a + b + c) 
+
+
+# num = int(input("Введите 3-значное число: "))
+# sum = 0
+# for i in range(3):
+#     sum += num % 10
+#     num = num // 10
+# print(sum)

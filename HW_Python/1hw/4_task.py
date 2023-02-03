@@ -5,10 +5,18 @@
 # 3 2 4 -> yes
 # 3 2 1 -> non = int(input())
 
-n = int(input("Введите n "))
-m = int(input("Введите m "))
-k = int(input("Введите k "))
+n = int(input("Введите длину шоколадки n "))
+m = int(input("Введите ширину m "))
+k = int(input("Сколько кусочков вы хотели бы отломить? "))
 if k < n * m and ((k % n == 0) or (k % m == 0)):
     print('YES')
 else:
     print('NO')
+
+#     size_n = int(input("Введите размер n: "))
+# size_m = int(input("Введите размер m: "))
+# num = int(input("Сколько кусочков вы хотите отломить?: "))
+# if num % size_n == 0 or num % size_m == 0:
+#     print("Yes")
+# else:
+#     print("No")
