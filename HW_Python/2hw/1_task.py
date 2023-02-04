@@ -6,14 +6,21 @@
 # 5 -> 1 0 1 1 0
 # 2
 
-n = int(input("Введите минимальное количество монет, которые нужно перевернуть "))
-k = 0
-for i in range(n):
-    v = int(input())
-    if v == 1:
-        k += 1
-        k<n/2 
-        print(k)  
-    else: n-k 
-    print(v)
-    
+lists = []
+boxOne = 0
+boxZero = 0
+money = int(input('Введите количество монеток: '))
+for i in range (money):
+    lists.append(int(input('Bвeдите сторону, 1 - "орeл", 0 - "peшкa": ')))
+print(lists)
+for i in lists:
+    if i > 0:
+        boxOne += 1
+    else:
+        boxZero += 1
+if boxOne < boxZero:
+    print(f'Нужно перевернуть {boxOne} монеты решкой вверх')
+elif boxOne == boxZero:
+    print(f'Нужно перевернуть {boxOne} монеты решкой или {boxZero} монеты орлом вверх')
+else:
+    print(f'Нужно перевернуть {boxZero} монеты орлом вверх')

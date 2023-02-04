@@ -18,12 +18,12 @@
 #             break
 
 
-a, b = map(int, input().split())
-res = []
-for i in range(a + b):
-    if i == (a * i - b)**0.5:
-        res.append(i)
-print(*res if len(res) == 2 else res + res)
+# a, b = map(int, input().split())
+# res = []
+# for i in range(a + b):
+#     if i == (a * i - b)**0.5:
+#         res.append(i)
+# print(*res if len(res) == 2 else res + res)
 
 
 
@@ -37,3 +37,16 @@ print(*res if len(res) == 2 else res + res)
 # s, p = map( int, input('s, p = ').split() )
 # z = sqrt( (s/2)**2 - p )
 # print( int( s/2 - z ), int( s/2 + z ) )
+
+# d = s ** 2 - 4 * p
+# secondNum = int(s / 2 + d ** (0.5) / 2)
+# firstNum = int(s / 2 - d ** (0.5) / 2)
+# print(f'Загаданные числа это: {firstNum} и {secondNum}. ')
+
+from random import randint
+
+firstNum = randint(0, 1001) 
+secondNum = randint(0, 1001)
+s = firstNum + secondNum
+p = firstNum * secondNum
+print(f'Загадано два числа.\nСумма этих чисел = {s}.'f'\nПроизведение этих чисел = {p}.\n')
